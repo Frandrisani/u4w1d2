@@ -13,6 +13,7 @@ public class esercizio1 {
         int anno = Integer.parseInt(scanner.nextLine());
         boolean risultato2 = annoBisestile(anno);
         System.out.println(risultato2);
+        scanner.close();
 
     }
 

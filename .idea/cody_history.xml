@@ -6,6 +6,19 @@
         <chat>
           <accountId value="VXNlcjozMTI0Nzc=" />
           <internalId value="7d4e6763-d478-45a3-8596-69f3334422ce" />
+          <messages>
+            <list>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="un programma in java dove l'utente inserisce una stringa e con un ciclo while separiamo tutti i caratteri di quella stringa con una virgola. il programma si interrompe quando inseriamo la stringa :p" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value=" Ecco il programma Java per separare i caratteri di una stringa inserita dall'utente con una virgola, finché non viene inserita la stringa &quot;:p&quot;:&#10;&#10;```java&#10;import java.util.Scanner;&#10;&#10;public class SeparaIlTesto {&#10;&#10;  public static void main(String[] args) {&#10;    &#10;    Scanner scanner = new Scanner(System.in);&#10;    &#10;    System.out.print(&quot;Inserisci una stringa: &quot;);&#10;    String stringa = scanner.nextLine();&#10;    &#10;    while(!stringa.equals(&quot;:p&quot;)) {&#10;      for(int i=0; i&lt;stringa.length(); i++) {&#10;        System.out.print(stringa.charAt(i));&#10;        if(i &lt; stringa.length()-1) {&#10;          System.out.print(&quot;,&quot;);&#10;        }&#10;      }&#10;      System.out.println();&#10;      &#10;      System.out.print(&quot;Inserisci una stringa: &quot;);&#10;      stringa = scanner.nextLine();&#10;    }&#10;    &#10;    System.out.println(&quot;Programma terminato&quot;);&#10;    &#10;  }&#10;&#10;}&#10;```&#10;&#10;Il programma utilizza un ciclo while finché l'utente non inserisce &quot;:p&quot;. Dentro il ciclo, con un for vengono iterati tutti i caratteri della stringa inserita, stampando ogni carattere e dopo tutti tranne l'ultimo una virgola. Dopo la stampa viene richiesto di inserire una nuova stringa, e il ciclo ricomincia." />
+              </message>
+            </list>
+          </messages>
+          <updatedAt value="2024-03-05T16:08:19.6558725" />
         </chat>
       </list>
     </chats>
